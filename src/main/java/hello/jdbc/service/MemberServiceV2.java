@@ -25,7 +25,7 @@ public class MemberServiceV2 {
 
         try {
             con.setAutoCommit(false); // 트랜잭션 시작
-            bizLogic(con, fromId, toId, money);//비즈니스 로직
+            bizLogic(con, fromId, toId, money); //비즈니스 로직
             con.commit();
         } catch (Exception e) {
             con.rollback();
